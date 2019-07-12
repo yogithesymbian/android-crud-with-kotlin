@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.scode.kotlincrud.Filtering">
+
+
+    <EditText
+        android:id="@+id/edtFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:hint="19991230"
+        android:inputType="datetime"
+        android:padding="24px"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:hint="1999"
+        android:padding="24px"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/edtFrom"
+        app:layout_constraintStart_toStartOf="@+id/edtFrom"
+        app:layout_constraintTop_toBottomOf="@+id/edtFrom" />
+
+
+    <Button
+        android:id="@+id/btnDate"
+        style="@style/Base.Widget.AppCompat.Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="FILTER"
+        app:layout_constraintEnd_toEndOf="@+id/edtTo"
+        app:layout_constraintStart_toStartOf="@+id/edtTo"
+        app:layout_constraintTop_toBottomOf="@+id/edtTo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="350dp" />
+
+</android.support.constraint.ConstraintLayout>

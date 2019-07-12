@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#282A36"
+    android:orientation="vertical"
+    >
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cvList"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_margin="12dp"
+            >
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#282A36">
+
+                <TextView
+                    android:id="@+id/lbltreatcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="28dp"
+                    android:text="Treat Code  :"
+                    android:textColor="#4F98AB"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.125"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/lbl1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="Treat Date   :"
+                    android:textColor="#4F98AB"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toStartOf="@+id/txt_td"
+                    app:layout_constraintStart_toStartOf="@+id/lbltreatcode"
+                    app:layout_constraintTop_toBottomOf="@+id/lbltreatcode" />
+
+                <TextView
+                    android:id="@+id/lb2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Doctor ID     :"
+                    android:textColor="#4F98AB"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toStartOf="@+id/txt_di"
+                    app:layout_constraintStart_toStartOf="@+id/lbl1"
+                    app:layout_constraintTop_toBottomOf="@+id/lbl1" />
+
+                <TextView
+                    android:id="@+id/lbl3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Patient ID    :"
+                    android:textColor="#4F98AB"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toStartOf="@+id/txt_pi"
+                    app:layout_constraintStart_toStartOf="@+id/lb2"
+                    app:layout_constraintTop_toBottomOf="@+id/lb2" />
+
+
+                <TextView
+                    android:id="@+id/txt_tc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="28dp"
+                    android:text="T001"
+                    android:textColor="#A5AC6C"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/lbltreatcode"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/txt_td"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="2019-03-03"
+                    android:textColor="#A5AC6C"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/txt_tc"
+                    app:layout_constraintStart_toStartOf="@+id/txt_tc"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_tc" />
+
+                <TextView
+                    android:id="@+id/txt_di"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="D1"
+                    android:textColor="#A5AC6C"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/txt_td"
+                    app:layout_constraintStart_toStartOf="@+id/txt_td"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_td" />
+
+                <TextView
+                    android:id="@+id/txt_pi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="1"
+                    android:textColor="#A5AC6C"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/txt_di"
+                    app:layout_constraintStart_toStartOf="@+id/txt_di"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_di" />
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+</android.support.constraint.ConstraintLayout>
