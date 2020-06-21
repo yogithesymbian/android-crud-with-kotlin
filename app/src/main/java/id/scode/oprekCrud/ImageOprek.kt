@@ -1,8 +1,8 @@
 package id.scode.oprekCrud
 
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v7.widget.GridLayoutManager
+import androidx.recyclerview.widget.GridLayoutManager
 import android.util.Log
 import android.view.View
 import android.widget.Toast
@@ -24,7 +24,7 @@ class ImageOprek : AppCompatActivity() {
         setContentView(R.layout.activity_image_oprek)
 
         rvImageOprek.setHasFixedSize(true)
-        rvImageOprek.layoutManager = GridLayoutManager(this, 1, GridLayoutManager.HORIZONTAL, false)
+        rvImageOprek.layoutManager = androidx.recyclerview.widget.GridLayoutManager(this, 1, androidx.recyclerview.widget.GridLayoutManager.HORIZONTAL, false)
 
     }
 

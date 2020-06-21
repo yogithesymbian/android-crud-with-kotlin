@@ -2,10 +2,10 @@ package id.scode.kotlincrud
 
 import android.app.ProgressDialog
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v4.widget.ContentLoadingProgressBar
-import android.support.v7.widget.LinearLayoutManager
+import androidx.core.widget.ContentLoadingProgressBar
+import androidx.recyclerview.widget.LinearLayoutManager
 import android.util.Log
 import android.widget.Toast
 import com.androidnetworking.AndroidNetworking
@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
          * set recyclerView to LinearLayout
          */
         recycleViewData.setHasFixedSize(true)
-        recycleViewData.layoutManager = LinearLayoutManager(this)
+        recycleViewData.layoutManager = androidx.recyclerview.widget.LinearLayoutManager(this)
 
 //        val adapterListPresident = AdapterListPresident(this)
 //        adapterListPresident.setListPresident(list)

@@ -1,9 +1,9 @@
 package id.scode.oprekCrud
 
 import android.app.ProgressDialog
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v7.widget.GridLayoutManager
+import androidx.recyclerview.widget.GridLayoutManager
 import android.util.Log
 import android.view.View
 import android.widget.Toast
@@ -24,7 +24,7 @@ class OprekCrud : AppCompatActivity() {
         setContentView(R.layout.activity_oprek_crud)
 
         rvOprek.setHasFixedSize(true)
-        rvOprek.layoutManager = GridLayoutManager(this, 1, GridLayoutManager.HORIZONTAL, false)
+        rvOprek.layoutManager = androidx.recyclerview.widget.GridLayoutManager(this, 1, androidx.recyclerview.widget.GridLayoutManager.HORIZONTAL, false)
 
 
     }

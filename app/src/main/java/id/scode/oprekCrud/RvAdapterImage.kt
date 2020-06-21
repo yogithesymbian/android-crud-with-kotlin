@@ -1,7 +1,7 @@
 package id.scode.oprekCrud
 
 import android.content.Context
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -14,9 +14,9 @@ import kotlinx.android.synthetic.main.oprek_image_view.view.*
  * Created by Dani on 1/4/2019.
  * Yogi Arif Widodo
  */
-class RvAdapterImage(private val context: Context, private val arrayList: ArrayList<DataImage>) : RecyclerView.Adapter<RvAdapterImage.Holder>() {
+class RvAdapterImage(private val context: Context, private val arrayList: ArrayList<DataImage>) : androidx.recyclerview.widget.RecyclerView.Adapter<RvAdapterImage.Holder>() {
 
-    class Holder(val view: View) : RecyclerView.ViewHolder(view)
+    class Holder(val view: View) : androidx.recyclerview.widget.RecyclerView.ViewHolder(view)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
         return Holder(LayoutInflater.from(parent.context).inflate(R.layout.oprek_image_view, parent, false))

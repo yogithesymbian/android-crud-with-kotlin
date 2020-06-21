@@ -1,7 +1,7 @@
 package id.scode
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import id.scode.kotlincrud.MainActivity
 import id.scode.kotlincrud.R
